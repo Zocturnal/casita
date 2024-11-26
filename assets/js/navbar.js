@@ -1,8 +1,8 @@
 function hamburgerMenuToggle() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
+    var x = document.getElementById("myTopnav_mobile");
+    if (x.hidden) {
+      x.hidden = false;
     } else {
-      x.className = "topnav";
+      x.hidden = true;
     }
 }
