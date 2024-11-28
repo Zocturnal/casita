@@ -1,38 +1,80 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Casita | Home</title>
-    <link type="text/css" rel="stylesheet" href="../css/master.css" />
-    <script src="../js/navbar.js"></script>
-  </head>
-  <body>
-    <header>
-        <div class="topnav" id="myTopnav">
-            <img src="../img/250 Rocksolid.png" style="width:100px">
-            <a href="application.html">Application</a>
-            <a href="commentcards.html">Comment Cards</a>
-            <a href="event.html">Event</a>
-            <a href="menu.html">Menu</a>
-            <a href="home.html" class="active">Home</a>
-            <a href="javascript:void(0);" class="icon" onclick="hamburgerMenuToggle()">
-                <i class="fa fa-bars"></i>
-            </a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Casita | Home</title>
+        <link type="text/css" rel="stylesheet" href="../css/master.css" />
+        <script src="../js/navbar.js"></script>
+        <script>
+            (function () {
+                window.addEventListener("DOMContentLoaded", (event) => {
+                    let burger = document.getElementById("burger"),
+                        nav = document.getElementById("main-nav");
+
+                    burger.addEventListener("click", function (e) {
+                        this.classList.toggle("is-open");
+                        nav.classList.toggle("is-open");
+                    });
+                });
+            })();
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="desktopnav">
+                <div class="navheader">
+                    <img
+                        class="nav-logo"
+                        src="../img/CasitaLogo_NoWords_Simple.png"
+                        alt=""
+                    />
+                    <button id="burger" class="open-main-nav">
+                        <span class="burger"></span>
+                    </button>
+                </div>
+                <nav class="main-nav" id="main-nav">
+                    <ul>
+                        <li><a id="activepage" href="home.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="event.html">Event</a></li>
+                        <li><a href="commentcards.html">Comment Cards</a></li>
+                        <li><a href="application.html">Application</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="headergap"></div>
+        </header>
+
+        <div class="content">
+            <div></div>
+            <div class="center">
+                <img src="../img/Casita_Complex.png" style="width: 50%" />
+            </div>
+            <div></div>
+            <div></div>
+            <div class="center"><h1>About Us</h1></div>
+            <div></div>
+            <div></div>
+            <div class="center">
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining
+                    essentially unchanged. It was popularised in the 1960s with
+                    the release of Letraset sheets containing Lorem Ipsum
+                    passages, and more recently with desktop publishing software
+                    like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+            </div>
+            <div></div>
         </div>
-        <div class="topnav responsive" id="myTopnav_mobile" hidden>
-            <a href="home.html" class="active">Home</a>
-            <a href="menu.html">Menu</a>
-            <a href="event.html">Event</a>
-            <a href="commentcards.html">Comment Cards</a>
-            <a href="application.html">Application</a>
-        </div>
-    </header>
-    <div class="content">
-      <h2>Test</h2>
-    </div>
-    <footer>
-      <img class="footerlogo" src="../img/250 rocksolidw.png" alt="" />
-      <p>&copy;:Rock Solid Inc. - Designed by Robyn Finn-Falls</p>
-    </footer>
-  </body>
+
+        <footer>
+            <img class="footerlogo" src="../img/250 rocksolidw.png" alt="" />
+            <p>&copy;:Rock Solid Inc. - Designed by Robyn Finn-Falls</p>
+        </footer>
+    </body>
 </html>

@@ -1,8 +1,7 @@
-function hamburgerMenuToggle() {
-    var x = document.getElementById("myTopnav_mobile");
-    if (x.hidden) {
-      x.hidden = false;
-    } else {
-      x.hidden = true;
-    }
-}
+// let burger = document.getElementById('burger'),
+// 	 nav    = document.getElementById('main-nav');
+
+// burger.addEventListener('click', function(e){
+// 	this.classList.toggle('is-open');
+// 	nav.classList.toggle('is-open');
+// });

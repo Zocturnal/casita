@@ -2,3 +2,11 @@
 @import url(content.css);
 @import url(header-footer.css);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+
+body {
+    background-color: rgb(225, 214, 255);
+}
+
+.googleForm {
+    margin: 15px;
+}

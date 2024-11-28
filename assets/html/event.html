@@ -8,23 +8,22 @@
   </head>
   <body>
     <header>
-        <div class="topnav" id="myTopnav">
-            <a href="application.html">Application</a>
-            <a href="commentcards.html">Comment Cards</a>
-            <a href="event.html" class="active">Event</a>
-            <a href="menu.html">Menu</a>
-            <a href="home.html">Home</a>
-            <a href="javascript:void(0);" class="icon" onclick="hamburgerMenuToggle()">
-                <i class="fa fa-bars"></i>
-            </a>
+        <div class="desktopnav">
+            <div class="navheader">
+                <img class="nav-logo" src="../img/CasitaLogo_NoWords_Simple.png" alt="">
+                <button id="burger" class="open-main-nav"> <span class="burger"></span> </button>
+            </div>
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a id="activepage" href="event.html">Event</a></li>
+                    <li><a href="commentcards.html">Comment Cards</a></li>
+                    <li><a href="application.html">Application</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="topnav responsive" id="myTopnav_mobile" hidden>
-            <a href="home.html">Home</a>
-            <a href="menu.html">Menu</a>
-            <a href="event.html" class="active">Event</a>
-            <a href="commentcards.html">Comment Cards</a>
-            <a href="application.html">Application</a>
-        </div>
+        <div class="headergap"></div>
     </header>
     <div class="content">
       <h2>Test</h2>

@@ -1,5 +1,5 @@
 /*Footer*/
-footer{
+footer {
     background-color: #170026;
     margin-bottom: 0px;
     text-align: center;
@@ -7,7 +7,18 @@ footer{
     margin: 0px -8px -8px;
     padding: 1px 0px;
 }
-  
-footer h1{font-weight: 300; font-size: 22px; margin-bottom: 0px;}
-footer p{font-weight: 200; margin-top: 0px; margin-bottom: 0px;}
-footer img{width: 25px; margin: 0px;}
+
+footer h1 {
+    font-weight: 300;
+    margin-bottom: 0px;
+}
+footer p {
+    font-weight: 200;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 1.5vw;
+}
+footer img {
+    width: 25px;
+    margin: 0px;
+}
