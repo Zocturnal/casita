@@ -1,4 +1,5 @@
 .content {
+    margin-top: 20px;
     display: grid;
     grid-template-columns: 400px auto 400px;
     grid-template-rows: auto auto auto;
@@ -8,15 +9,39 @@
     .center {
         text-align: center;
 
+        img {
+            width: 60%;
+        }
+
         h1 {
             font-size: 5vw;
             font-weight: 200;
             margin-top: 10px;
-            margin-bottom: 5px;
+            margin-bottom: 1px;           
+        }
+
+        hr {
+            overflow: visible; /* For IE */
+            height: 30px;
+            border-style: solid;
+            border-color: black;
+            border-width: 1px 0 0 0;
+            border-radius: 20px;
+        }
+        hr:before { /* Not really supposed to work, but does */
+            display: block;
+            content: "";
+            height: 30px;
+            margin-top: -31px;
+            border-style: solid;
+            border-color: black;
+            border-width: 0 0 1px 0;
+            border-radius: 20px;
         }
 
         p {
-            font-size: 1vw;
+            margin-top: -10px;
+            font-size: 1.5vw;
         }
     }
 
@@ -27,14 +52,87 @@
     .right {
         font-size: 45px;
     }
+
+    .button {
+        padding: 1em 2em;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        cursor: pointer;
+        color: #0d2430;
+        transition: all 1000ms;
+        font-size: 20px;
+        position: relative;
+        overflow: hidden;
+        outline: 2px solid #0d2430;
+        margin-left: 3vw;
+        margin-bottom: 3vw;
+      }
+      
+      button:hover {
+        color: #ffffff;
+        transform: scale(1.1);
+        outline: 2px solid #0d2430;
+        box-shadow: 4px 5px 17px -4px #0d2430;
+      }
+      
+      button::before {
+        content: "";
+        position: absolute;
+        left: -50px;
+        top: 0;
+        width: 0;
+        height: 100%;
+        background-color: #0d2430;
+        transform: skewX(45deg);
+        z-index: -1;
+        transition: width 1000ms;
+      }
+      
+      button:hover::before {
+        width: 250%;
+      }
 }
 
-@media (max-width: 800px){
+@media (max-width: 300px){
     .content {
         display: grid;
         grid-template-columns: 50px auto 50px;
         grid-template-rows: auto auto auto;
         justify-content: space-evenly;
         align-content: center;
+
+        .center {
+            text-align: center;
+
+            img {
+                width: 100%;
+            }
+    
+            h1 {
+                font-size: 35px;
+                font-weight: 200;
+                margin-top: 10px;
+                margin-bottom: 5px;
+            }
+    
+            p {
+                font-size: 20px;
+            }
+        }
+    
+        .left {
+            font-size: 30px;
+        }
+    
+        .right {
+            font-size: 45px;
+        }
+
+        .button {
+            font-size: 15px;
+        }
     }
 }

@@ -5,19 +5,7 @@
         <title>Casita | Home</title>
         <link type="text/css" rel="stylesheet" href="../css/master.css" />
         <script src="../js/navbar.js"></script>
-        <script>
-            (function () {
-                window.addEventListener("DOMContentLoaded", (event) => {
-                    let burger = document.getElementById("burger"),
-                        nav = document.getElementById("main-nav");
-
-                    burger.addEventListener("click", function (e) {
-                        this.classList.toggle("is-open");
-                        nav.classList.toggle("is-open");
-                    });
-                });
-            })();
-        </script>
+        <script src="../js/script.js"></script>
     </head>
     <body>
         <header>
@@ -44,15 +32,49 @@
             </div>
             <div class="headergap"></div>
         </header>
-
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 6</div>
+                <img src="../img/slideshow1.png" style="width: 100%" />
+                <div class="text"><img src="../img/Casita_Complex.png" /></div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 6</div>
+                <img src="../img/slideshow2.png" style="width: 100%" />
+                <div class="text"><img src="../img/Casita_Complex.png" /></div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 6</div>
+                <img src="../img/slideshow3.png" style="width: 100%" />
+                <div class="text"><img src="../img/Casita_Complex.png" /></div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 6</div>
+                <img src="../img/slideshow4.png" style="width: 100%" />
+                <div class="text"><img src="../img/Casita_Complex.png" /></div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 6</div>
+                <img src="../img/slideshow5.png" style="width: 100%" />
+                <div class="text"><img src="../img/Casita_Complex.png" /></div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 6</div>
+                <img src="../img/slideshow6.png" style="width: 100%" />
+                <div class="text"><img src="../img/Casita_Complex.png" /></div>
+            </div>
+        </div>
         <div class="content">
             <div></div>
             <div class="center">
-                <img src="../img/Casita_Complex.png" />
+                <!-- <img src="../img/Casita_Complex.png" /> -->
             </div>
             <div></div>
             <div></div>
-            <div class="center"><h1>About Us</h1><hr></div>
+            <div class="center">
+                <h1>About Us</h1>
+                <hr />
+            </div>
             <div></div>
             <div></div>
             <div class="center">
@@ -70,7 +92,10 @@
             </div>
             <div></div>
             <div></div>
-            <div class="center"><button class="button">Now Hiring</button><button class="button">Event Details</button></div>
+            <div class="center">
+                <button class="button">Now Hiring</button
+                ><button class="button">Event Details</button>
+            </div>
             <div></div>
         </div>
         <div class="headergap"></div>
